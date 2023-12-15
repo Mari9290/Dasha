@@ -1,0 +1,77 @@
+.background {
+    animation: sTransition 10s linear infinite;
+    background: linear-gradient(to right,
+    rgb(76, 217, 105),
+    rgb(52, 170, 220),
+    rgb(88, 86, 217),
+    rgb(255, 45, 83),
+    rgb(255, 45, 83),
+    rgb(88, 86, 217),
+    rgb(52, 170, 220),
+    rgb(76, 217, 105)
+    );
+    background-size: 400%;
+    -webkit-background-clip: text;
+    color: rgba(255, 255, 255, .1);
+    font-family: 'Cormorant Infant', serif;
+    font-size: 79px;
+    font-weight: 650;
+    text-align: center;
+    /* left: 50%;
+    position: absolute;
+    text-align: left;
+    top: 50%; */
+    /* transform: translate(-50%, -50%); */
+}
+
+@keyframes sTransition {
+    0% {
+        background-position: 0%;
+    }
+    100% {
+        background-position: 400%;
+    }
+}
+
+.heart { 
+    color: #1A1A1A;
+    padding-top: 60px;
+    font-size: 150px;
+    vertical-align: middle;
+}
+
+.heart:hover {
+    color: red;
+}
+
+.hvr-bounce-in {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+}
+
+.hvr-bounce-in:hover, .hvr-bounce-in:focus, .hvr-bounce-in:active {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+    transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+}
+
+.block {
+    display: block;
+    margin-bottom: 150px;
+}
+
+.img {
+    margin: auto;
+}
+
+@media (max-width: 450px) {
+    .background {
+        font-size: 45px;
+    }
+}
